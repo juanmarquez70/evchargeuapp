@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1045524234072",
+    "project_id": "evchargeudatabase",
+    "storage_bucket": "evchargeudatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045524234072:android:f9cf88b3db7d6930ccef2d",
+        "android_client_info": {
+          "package_name": "com.example.evchargeufirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045524234072-pa0hmb6v2lb0crs4ojs6fsnimsn8uskd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdSosJWeaDW45m1NijrC_xijFOHBr5jBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045524234072-pa0hmb6v2lb0crs4ojs6fsnimsn8uskd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
