@@ -31,7 +31,7 @@ public class SignUpActivity extends AppCompatActivity {
         firstSignUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (userSign.getText().toString().equals("marquez") && passwordSign.getText().toString().equals("123") && passwordSign.getText().toString().equals(passwordConfirmSign.getText().toString())){
+                if (userSign.getText().toString().equals("example") && passwordSign.getText().toString().equals("123") && passwordSign.getText().toString().equals(passwordConfirmSign.getText().toString())){
                     //Successful login
                     Toast.makeText(SignUpActivity.this, "USER SUCCESSFULLY CREATED", Toast.LENGTH_SHORT).show();
 
