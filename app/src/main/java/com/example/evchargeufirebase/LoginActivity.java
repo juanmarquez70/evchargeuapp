@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         TextView loginPassword = (TextView) findViewById(R.id.loginPassword);
 
         Button loginBtn = (Button) findViewById(R.id.loginButton);
+        Button signupBtn = (Button) findViewById(R.id.buttonStartSignUp);
 
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
@@ -50,9 +51,22 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this,"LOGIN FAILED",Toast.LENGTH_SHORT).show();
             }
         });
+
+        signupBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Toast.makeText(LoginActivity.this, "Sign up", Toast.LENGTH_SHORT).show();
+                goToSignUp();
+            }
+        });
     }
     private void goToBilling(){
         Intent intent = new Intent(LoginActivity.this, Billing.class);
+        startActivity(intent);
+        finish();
+    }
+    private void goToSignUp(){
+        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
         startActivity(intent);
         finish();
     }

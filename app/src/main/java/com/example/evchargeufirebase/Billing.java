@@ -23,8 +23,16 @@ public class Billing extends AppCompatActivity {
     TextView username;
     Button btnPay;
 
-    String user = "JuanArango";
-    String registeredUsers = "registeredusers";
+//    String user = "JuanArango";
+//    String registeredUsers = "registeredusers";
+
+    String path = "Accounts";
+    String account = "id01";
+    String name = "Name";
+//    String password = "Password";
+//    String username = "Username";
+    String bill = "bill";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +49,9 @@ public class Billing extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                simpleText.setText(snapshot.child("names").child("user1").getValue(String.class));
-//                simpleText.setText(snapshot.child("names").child("user4").child("yeah").getValue(String.class));
-                username.setText(snapshot.child(registeredUsers).child(user).getKey());
-                billInfo.setText("Your bill is: "+ snapshot.child(registeredUsers).child(user).child("bill").getValue(String.class));
+
+               username.setText(snapshot.child(path).child(account).child(name).getValue().toString());
+               billInfo.setText("Your bill is: "+ snapshot.child(path).child(account).child(bill).getValue().toString());
 
             }
 
